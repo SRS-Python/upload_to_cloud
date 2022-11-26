@@ -29,6 +29,13 @@ to the .env file
 AWS_S3_ACCESS_KEY_ID=$your_key_id
 AWS_S3_SECRET_ACCESS_KEY=$your_secret_key
 S3_BUCKET_NAME=$your_bucket_name
+---------------Google Cloud Storage------------------------
+Note: Client is responsible for creating everything on-
+Google Cloud (Credentials json file)
+please make sure to add the following keys and values
+to the .env file
+GCP_CREDENTIAL_FILE=/path/to/credentials/json
+GCP_BUCKET_NAME=srs-file-space
 """
 # pylint: disable=import-outside-toplevel
 
