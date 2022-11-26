@@ -1,7 +1,7 @@
 """
 This is the main module for GCP programs
-The module is dependent on boto3 SDK from AWS
-Currently this module supports file upload to AWS s3
+The module is dependent on google-cloud-storage
+Currently this module supports file upload to google-cloud-storage
 """
 import pkg_resources
 

@@ -11,7 +11,7 @@ GCP_BUCKET_NAME=your_bucket_name
 if the credentials fail, the program will fail to execute
 if GCP_BUCKET_NAME is not found, the program will raise exception
 Make sure that the user account or service account that you are using
-has the required permissions. For this, you must have "storage.buckets.list
+has the required permissions. For this, you must have "storage.buckets.list"
 -----------------------------------------------------------------------------
 """
 # Imports the Google Cloud client library

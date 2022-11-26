@@ -1,15 +1,16 @@
-upload_to_storage
+upload_to_cloud
 =================
-**upload_to_storage** is a python package that helps in transferring your local files to cloud storage. 
+**upload_to_cloud** is a python package that helps in transferring your local files to cloud storage. 
 Currently AWS S3 or Google Cloud Storage are supported for file upload.
 Please refer the following guide for installation steps.
 
-**Note: The current code requires Python 3.10+**
+**Note: The current version requires Python 3.10+**
 
 - [pre-requisites](#pre-requisites)
   - [AWS Requirement](#aws-requirement)
   - [Google Cloud Storage Requirements](#google-cloud-storage-requirements)
 - [Getting Started](#getting-started)
+- [Work in Progress](#work-in-progress)
 
 ## pre-requisites
 Your project would require a `.env` file. Sample file is attached to the project. refer: `.env_example`
@@ -108,6 +109,7 @@ $ python -m pip install -e .
 ```
 
 Once the package is installed, you can run the following program:
+Note: _you need to import `upload_to_storage` module._
 ```shell
 from upload_to_storage import FileTransfer
 
@@ -116,3 +118,8 @@ files_root = '/path/to/files/'
 file_transfer=FileTransfer(files_root)
 file_transfer.upload_files_to_cloud()
 ```
+
+## Work in Progress
+- Current version of code doesn't generate any message to the end users when process completes.
+- Enable logging and log level for verbose messages.
+- 
