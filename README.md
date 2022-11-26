@@ -81,7 +81,7 @@ This step is applicable if you only use AWS S3 to upload your files.
 You can install the package from source with following:
 ```shell
 $ git clone https://github.com/SRS-Python/upload_to_cloud.git
-$ cd boto3
+$ cd upload_to_cloud
 $ python -m pip install -r requirements_aws.txt
 $ python -m pip install -e .
 ```
@@ -92,7 +92,7 @@ This step is applicable if you only use Google Cloud Storage to upload your file
 You can install the package from source with following:
 ```shell
 $ git clone https://github.com/SRS-Python/upload_to_cloud.git
-$ cd boto3
+$ cd upload_to_cloud
 $ python -m pip install -r requirements_gcp.txt
 $ python -m pip install -e .
 ```
@@ -102,7 +102,7 @@ If you want to work on either AWS S3 or Google Cloud Storage, you can follow the
 
 ```shell
 $ git clone https://github.com/SRS-Python/upload_to_cloud.git
-$ cd boto3
+$ cd upload_to_cloud
 $ python -m pip install -r requirements.txt
 $ python -m pip install -e .
 ```
