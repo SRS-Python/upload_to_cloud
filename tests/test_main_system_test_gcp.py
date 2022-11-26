@@ -115,17 +115,6 @@ class MainTestCase(unittest.TestCase):
         self.assertTrue(file_transfer.upload_files_to_cloud())
         ENV.env_dict = __temp
 
-    def test_gcp_invalid_file_object(self):
-        """
-        Test if the object type is valid or not
-        for the upload_to_gcp_storage function
-        :return:
-        """
-        if not self.gcp_available:
-            return
-        from upload_to_storage.gcp.gcp_storage import upload_to_gcp_storage
-        self.assertRaises(ValueError, upload_to_gcp_storage, [{'name': 'dummy'}])
-
 
 if __name__ == '__main__':
     unittest.main()
