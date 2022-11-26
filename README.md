@@ -8,7 +8,7 @@ Please refer the following guide for installation steps.
 
 - [pre-requisites](#pre-requisites)
   - [AWS Requirement](#aws-requirement)
-  - [Google Cloud Storage](#google-cloud-storage)
+  - [Google Cloud Storage Requirements](#google-cloud-storage-requirements)
 - [Getting Started](#getting-started)
 
 ## pre-requisites
@@ -49,7 +49,7 @@ AWS_S3_SECRET_ACCESS_KEY=your_access_key
 S3_BUCKET_NAME=your_bucket_name
 ```
 
-### Google Cloud Storage
+### Google Cloud Storage Requirements
 If you are using Google Cloud Storage, please add the following section in the `.env` file.
 To authenticate with Google cloud, credentials json file is mandatory. 
 Download the JSON to a secure location and add the path to the `.env` under `GCP_CREDENTIAL_FILE` section.
@@ -72,8 +72,8 @@ $ . venv/bin/activate
 ```
 Jump to the section as per your cloud configuration:
 - [AWS-S3](#aws-s3)
-- [Google-Cloud-Storage](#gcp-storage)
-- [All-cloud-providers](#all-cloud)
+- [Google-Cloud-Storage](#google-cloud-storage)
+- [All-cloud-providers](#all-cloud-providers)
 
 #### AWS-S3
 This step is applicable if you only use AWS S3 to upload your files.
