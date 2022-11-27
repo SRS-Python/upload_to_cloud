@@ -10,6 +10,7 @@ Please refer the following guide for installation steps.
   - [AWS Requirement](#aws-requirement)
   - [Google Cloud Storage Requirements](#google-cloud-storage-requirements)
 - [Getting Started](#getting-started)
+- [For Developers](#for-developers)
 - [Work in Progress](#work-in-progress)
 
 ## pre-requisites
@@ -111,15 +112,39 @@ $ python -m pip install -e .
 Once the package is installed, you can run the following program:
 Note: _you need to import `upload_to_storage` module._
 ```shell
+# Import the FileTransfer class from upload_to_storage
 from upload_to_storage import FileTransfer
 
-# Add the path where your file is present
+# Define the path where your file is present
 files_root = '/path/to/files/'
+# Create the object for FileTransfer by passing the files root
+# Note: files root is a required parameter
 file_transfer=FileTransfer(files_root)
+# Call the upload_files_to_cloud method to transfer the files
 file_transfer.upload_files_to_cloud()
+```
+
+## For Developers
+
+If you want to run the pytest, please follow the below steps:
+- Install the dev requirements on the project root
+```shell
+# please move to upload_to_cloud directory, then run following
+$ python -m pip install -r requirements_dev.txt
+```
+- Test the module from command line
+```shell
+# please move to upload_to_cloud directory, then run following
+$ pytest ./tests
+```
+- Note: The above test will run system test as well. 
+Please have AWS and/or GCP storage package installed: [All-cloud-providers](#all-cloud-providers)
+- You can also test individual modules as well as follows:
+```shell
+# please move to upload_to_cloud directory, then run following
+$ pytest ./tests/test_file_main_unitest.py
 ```
 
 ## Work in Progress
 - Current version of code doesn't generate any message to the end users when process completes.
 - Enable logging and log level for verbose messages.
-- 
